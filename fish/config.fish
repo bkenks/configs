@@ -4,5 +4,5 @@ end
 
 set -gx PATH "$HOME/.local/bin" $PATH
 
-source $HOME/secrets.fish
+# source $HOME/secrets.fish
 starship init fish | source
