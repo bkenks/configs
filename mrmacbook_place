@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+rsync -avh --progress $SCRIPT_DIR/kitty/ ~/.config/kitty
+rsync -avh --progress $SCRIPT_DIR/fish/ ~/.config/fish
