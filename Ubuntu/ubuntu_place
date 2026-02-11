@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Source ends with / → copy contents of the folder into destination
+# Source without / → copy the folder itself into destination
+
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+
+rsync -avh --progress $SCRIPT_DIR/kitty/ ~/.config/kitty/
+rsync -avh --progress $SCRIPT_DIR/fish/ ~/.config/fish/
+rsync -avh --progress $SCRIPT_DIR/starship/ ~/.config/
