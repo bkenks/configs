@@ -4,9 +4,9 @@
 
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
-rsync -avh --progress --delete ~/.config/kitty/ $SCRIPT_DIR/kitty/
-rsync -avh --progress --delete ~/.config/fish/ $SCRIPT_DIR/fish/
-rsync -avh --progress --delete ~/.config/starship.toml $SCRIPT_DIR/starship/
+rsync -avh --progress ~/.config/kitty/ $SCRIPT_DIR/kitty/
+rsync -avh --progress ~/.config/fish/ $SCRIPT_DIR/fish/
+rsync -avh --progress ~/.config/starship.toml $SCRIPT_DIR/starship/
 
 # git add .
 # git commit -m "sync n' push"
